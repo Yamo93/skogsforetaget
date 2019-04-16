@@ -85,7 +85,7 @@ a:hover, a:active {
     justify-content: center; }
     .hero__left-title {
       margin-top: 10vh;
-      font-size: 4rem;
+      font-size: 6rem;
       color: #FEFEFE; }
       .hero__left-title span {
         color: #f9d423; }
@@ -93,3 +93,79 @@ a:hover, a:active {
     width: 40%;
     height: 100%;
     background: linear-gradient(to right, #285943cc, #8CD790c5), url(../img/hero.png); }
+
+.features {
+  padding: 8rem 5%;
+  display: flex;
+  justify-content: space-between; }
+  .features__box {
+    width: 30%;
+    border: .2px solid #777;
+    box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.5); }
+    .features__box-img {
+      height: 20rem; }
+    .features__box .info {
+      padding: 3rem; }
+    .features__box-title {
+      text-align: center;
+      color: #285943;
+      margin-bottom: 2rem; }
+    .features__box-desc {
+      text-align: center; }
+  .features__box:nth-child(1) .features__box-img {
+    background-image: url(../img/frontbox1.jpg);
+    background-position: center;
+    background-size: cover; }
+  .features__box:nth-child(2) .features__box-img {
+    background-image: url(../img/frontbox2.jpg);
+    background-position: center;
+    background-size: cover; }
+  .features__box:nth-child(3) .features__box-img {
+    background-image: url(../img/frontbox3.jpg);
+    background-position: center;
+    background-size: cover; }
+
+.footer {
+  padding: 3rem;
+  background-color: #285943;
+  color: #FEFEFE; }
+  .footer__menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .footer__menu a {
+      color: inherit;
+      font-weight: normal;
+      transition: all .3s; }
+      .footer__menu a:hover {
+        color: #F68657; }
+    .footer__menu-item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer .socialfollow {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .footer .socialmedia .icon:nth-child(1) {
+      color: #517fa4; }
+    .footer .socialmedia .icon:nth-child(2) {
+      color: #3b5998; }
+    .footer .socialmedia .icon:nth-child(3) {
+      color: #38A1F3; }
+    .footer .socialmedia .icon:nth-child(4) {
+      color: #BC081C; }
+    .footer .socialmedia .icon {
+      cursor: pointer;
+      font-size: 3rem;
+      transition: all .3s; }
+      .footer .socialmedia .icon:hover {
+        color: #F68657; }
+    .footer .socialmedia .icon:not(:last-child) {
+      margin-right: 2rem; }
+  .footer .copy {
+    text-align: center; }
+    .footer .copy span {
+      color: #F68657; }

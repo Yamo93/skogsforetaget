@@ -1,0 +1,75 @@
+.footer {
+    padding: 3rem;
+    background-color: $primary-color;
+    color: $white;
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        a {
+            color: inherit;
+            font-weight: normal;
+            transition: all .3s;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    .socialfollow {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        .icon:nth-child(1) {
+            color: #517fa4;
+        }
+
+        .icon:nth-child(2) {
+            color: #3b5998;
+        }
+
+        .icon:nth-child(3) {
+            color: #38A1F3;
+        }
+
+        .icon:nth-child(4) {
+            color: #BC081C;
+        }
+
+        .icon {
+            cursor: pointer;
+            font-size: 3rem;
+            transition: all .3s;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+
+        .icon:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    .copy {
+        text-align: center;
+
+        span {
+            color: $secondary-color;
+        }
+    }
+}
