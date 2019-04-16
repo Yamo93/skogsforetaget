@@ -1,0 +1,29 @@
+.hero {
+    height: 90vh;
+    background-color: $lightgreen;
+    display: flex;
+
+    &__left {
+        width: 60%;
+        padding: 10vh 5%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        &-title {
+            margin-top: 10vh;
+            font-size: 4rem;
+            color: $white;
+
+            span {
+                color: $yellow;
+            }
+        }
+    }
+
+    &__right {
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(to right, #285943cc, #8CD790c5), url(../img/hero.png);
+    }
+}
