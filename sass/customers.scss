@@ -1,0 +1,53 @@
+.customers {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 10%;
+
+    &__title {
+        font-size: 3.2rem;
+        color: $primary-color;
+        width: 20%;
+    }
+
+    &__quote {
+        width: 60%;
+        min-height: 50vh;
+        background-color: $primary-color;
+        color: $white;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        padding: 8rem;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        &-img {
+            width: 50%;
+            height: 65%;
+            background-image: url(../img/tree_woman.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: -30%;
+        }
+
+        blockquote {
+            font-size: 3.5rem;
+            font-family: $primary-font;
+            width: 50%;
+            margin-bottom: 3rem;
+            margin-left: 15%;
+        }
+
+        cite {
+            width: 50%;
+            font-family: $primary-font;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-left: 15%;
+        }
+    }
+}
