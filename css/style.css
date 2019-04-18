@@ -404,3 +404,89 @@ a:hover, a:active {
     background-color: #8CD790; }
   .benefits__box:nth-child(even) .benefits__box-square {
     background-color: #F68657; }
+
+.contact {
+  padding: 5rem; }
+  .contact__title {
+    color: #285943;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .contact__text {
+    color: #285943;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3rem; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contact__form-name, .contact__form-email, .contact__form-message {
+      border: 0.5px solid rgba(51, 51, 51, 0.5);
+      margin-bottom: 2rem;
+      padding: .7rem 1.5rem;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.6rem;
+      width: 30%;
+      transition: all .3s;
+      outline: none; }
+      .contact__form-name:focus, .contact__form-email:focus, .contact__form-message:focus {
+        outline: none;
+        border-bottom: 3px solid #8CD790; }
+    .contact__form-button {
+      cursor: pointer;
+      padding: 1rem 4rem;
+      background-color: #8CD790;
+      color: #FEFEFE;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.6rem;
+      border: 0.5px solid rgba(254, 254, 254, 0.4);
+      transition: all .5s;
+      backface-visibility: hidden; }
+      .contact__form-button:hover {
+        transform: scale(1.2);
+        background-color: #66ca6b; }
+
+.map {
+  padding: 5rem; }
+  .map__title {
+    color: #285943;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .map__area {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 50vh;
+    background-color: #DDD; }
+
+.post {
+  padding: 5rem; }
+  .post__img {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    height: 30vh;
+    background-image: url(../img/frontnews.jpg);
+    background-position: center;
+    background-size: cover; }
+  .post__date {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
+    .post__date span {
+      color: #285943;
+      font-weight: bold; }
+  .post__title {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: #285943;
+    margin-bottom: 2rem; }
+  .post__para {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.6em; }

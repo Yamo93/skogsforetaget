@@ -1,0 +1,40 @@
+.post {
+    padding: 5rem;
+
+    &__img {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        height: 30vh;
+        background-image: url(../img/frontnews.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__date {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+
+        span {
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+
+    &__title {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 3rem;
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+
+    &__para {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        line-height: 1.6em;
+    }
+}

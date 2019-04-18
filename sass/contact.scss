@@ -1,0 +1,76 @@
+.contact {
+    padding: 5rem;
+
+    &__title {
+        color: $primary-color;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        color: $primary-color;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-name, &-email, &-message {
+            border: .5px solid rgba(#333, .5);
+            margin-bottom: 2rem;
+            padding: .7rem 1.5rem;
+            font-family: $primary-font;
+            font-size: 1.6rem;
+            width: 30%;
+            transition: all .3s;
+            outline: none;
+            
+            &:focus {
+                outline: none;
+                border-bottom: 3px solid $lightgreen;
+            }
+        }
+
+        &-button {
+            cursor: pointer;
+            padding: 1rem 4rem;
+            background-color: $lightgreen;
+            color: $white;
+            font-family: $primary-font;
+            font-size: 1.6rem;
+            border: .5px solid rgba($white, .4);
+            transition: all .5s;
+            backface-visibility: hidden;
+
+            &:hover {
+                transform: scale(1.2);
+                background-color: darken($lightgreen, 10%);
+            }
+        }
+    }
+}
+
+.map {
+    padding: 5rem;
+
+    &__title {
+        color: $primary-color;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__area {
+        width: 70%;
+        margin: 0 auto;
+        min-height: 50vh;
+        background-color: #DDD;
+    }
+
+}
