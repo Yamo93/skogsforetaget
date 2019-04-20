@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="backdrop"></div>
+    <div class="dropdown">
+        <ul>
+            <li class="dropdown-close">&times;</li>
+            <li><a href="#" class="active">Hem</a></li>
+            <li><a href="nyheter.html">Nyheter</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
     <header class="header">
         <nav class="navbar">
             <h1 class="navbar__title">
@@ -30,6 +40,7 @@
                 <li class="navbar__menu-item"><a href="omoss.html">Om oss</a></li>
                 <li class="navbar__menu-item"><a href="kontakt.html">Kontakt</a></li>
             </ul>
+            <i class="fas fa-bars hamburger"></i>
         </nav>
     </header>
     <section class="hero">
@@ -44,6 +55,7 @@
             <div class="info">
                 <h3 class="features__box-title">Senaste nytt</h3>
                 <p class="features__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic ea nobis voluptate ratione dolore officiis a ut, excepturi consectetur? Iste, aspernatur aut voluptatibus voluptas assumenda unde magnam tempora molestias!</p>
+                <a href="nyheter.html" class="features__box-btn">Läs mer</a>
             </div>
         </div>
         <div class="features__box">
@@ -51,6 +63,7 @@
             <div class="info">
                 <h3 class="features__box-title">Om oss</h3>
                 <p class="features__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic ea nobis voluptate ratione dolore officiis a ut, excepturi consectetur? Iste, aspernatur aut voluptatibus voluptas assumenda unde magnam tempora molestias!</p>
+                <a href="omoss.html" class="features__box-btn">Läs mer</a>
             </div>
         </div>
         <div class="features__box">
@@ -58,6 +71,7 @@
             <div class="info">
                 <h3 class="features__box-title">Kontakta oss</h3>
                 <p class="features__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic ea nobis voluptate ratione dolore officiis a ut, excepturi consectetur? Iste, aspernatur aut voluptatibus voluptas assumenda unde magnam tempora molestias!</p>
+                <a href="kontakt.html" class="features__box-btn">Läs mer</a>
             </div>
         </div>
     </section>
@@ -78,5 +92,6 @@
         </div>
         <p class="copy">Copyright &copy; 2019 av <span>Yamo Gebrewold</span></p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

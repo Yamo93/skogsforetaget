@@ -8,10 +8,21 @@
         justify-content: center;
         margin-bottom: 3rem;
 
+        @include mediaquery(500px) {
+          flex-direction: column;
+          width: 30%;
+          margin: 0 auto;
+          margin-bottom: 3rem;
+        }
+
         a {
             color: inherit;
             font-weight: normal;
             transition: all .3s;
+
+            @include mediaquery(500px) {
+              font-size: 1.6rem;
+            }
 
             &:hover {
                 color: $secondary-color;
@@ -67,6 +78,10 @@
 
     .copy {
         text-align: center;
+
+        @include mediaquery(500px) {
+          font-size: 1.4rem;
+        }
 
         span {
             color: $secondary-color;

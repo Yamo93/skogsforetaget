@@ -3,6 +3,10 @@
     background-color: $lightgreen;
     display: flex;
 
+    @include mediaquery(770px) {
+      flex-direction: column;
+    }
+
     &__left {
         width: 60%;
         padding: 10vh 5%;
@@ -10,13 +14,21 @@
         display: flex;
         justify-content: center;
 
+        @include mediaquery(770px) {
+          width: 100%;
+        }
+
         &-title {
             margin-top: 10vh;
             font-size: 6rem;
             color: $white;
 
             @include mediaquery(950px) {
-            //   width: 50px;
+                font-size: 4rem;
+            }
+
+            @include mediaquery(500px) {
+              font-size: 3rem;
             }
 
             span {
@@ -29,5 +41,10 @@
         width: 40%;
         height: 100%;
         background: linear-gradient(to right, #285943cc, #8CD790c5), url(../img/hero.png);
+
+        @include mediaquery(770px) {
+          width: 100%;
+          background-position: center;
+        }
     }
 }

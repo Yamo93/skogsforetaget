@@ -1,6 +1,10 @@
 .contact {
     padding: 5rem;
 
+    @include mediaquery(500px) {
+      padding: 5rem 1.5rem;
+    }
+
     &__title {
         color: $primary-color;
         font-size: 3rem;
@@ -13,6 +17,14 @@
         width: 50%;
         margin: 0 auto;
         margin-bottom: 3rem;
+
+        @include mediaquery(650px) {
+          width: 80%;
+        }
+
+        @include mediaquery(500px) {
+          width: 95%;
+        }
     }
 
     &__form {
@@ -30,6 +42,18 @@
             width: 30%;
             transition: all .3s;
             outline: none;
+
+            @include mediaquery(950px) {
+              width: 50%;
+            }
+
+            @include mediaquery(650px) {
+              width: 80%;
+            }
+
+            @include mediaquery(500px) {
+                width: 95%;
+              }
             
             &:focus {
                 outline: none;
@@ -58,6 +82,10 @@
 
 .map {
     padding: 5rem;
+
+    @include mediaquery(500px) {
+      padding: 5rem 1.5rem;
+    }
 
     &__title {
         color: $primary-color;

@@ -4,10 +4,25 @@
     justify-content: space-between;
     padding: 10vh 10%;
 
+    @include mediaquery(850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    @include mediaquery(600px) {
+      padding: 10vh 1.5rem;
+    }
+
     &__title {
         font-size: 3.2rem;
         color: $primary-color;
         width: 20%;
+
+        @include mediaquery(850px) {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
     }
 
     &__quote {
@@ -23,6 +38,16 @@
         align-items: center;
         position: relative;
 
+        @include mediaquery(850px) {
+            width: 100%;
+            min-height: 40vh;
+        }
+
+        @include mediaquery(600px) {
+          padding: 0;
+          padding-bottom: 3rem
+        }
+
         &-img {
             width: 50%;
             height: 65%;
@@ -32,6 +57,18 @@
             position: absolute;
             bottom: 0;
             left: -30%;
+
+            @include mediaquery(850px) {
+              height: 50%;
+            }
+
+            @include mediaquery(600px) {
+              position: static;
+              left: 0;
+              height: 20rem;
+              width: 100%;
+              margin-bottom: 3rem;
+            }
         }
 
         blockquote {
@@ -40,6 +77,10 @@
             width: 50%;
             margin-bottom: 3rem;
             margin-left: 15%;
+
+            @include mediaquery(650px) {
+                font-size: 2.5rem;
+              }
         }
 
         cite {

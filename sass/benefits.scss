@@ -4,10 +4,24 @@
     justify-content: space-between;
     padding: 10vh 10%;
 
+    @include mediaquery(650px) {
+      flex-direction: column;
+    }
+
+    @include mediaquery(500px) {
+      padding: 5vh 5%;
+    }
+
     &__title {
         font-size: 3.2rem;
         color: $primary-color;
         width: 20%;
+
+        @include mediaquery(650px) {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 3rem;
+        }
     }
 
     .wrapper {
@@ -15,6 +29,14 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include mediaquery(900px) {
+          width: 70%;
+        }
+
+        @include mediaquery(650px) {
+          width: 100%;
+        }
     }
 
     &__box {
@@ -25,8 +47,13 @@
         display: flex;
         // justify-content: space-between;
 
+        @include mediaquery(650px) {
+            width: 100%;
+            min-width: 20rem;
+          }
+
         &-square {
-            width: 2rem;
+            min-width: 2rem;
             height: 2rem;
             border: .5px solid rgba(#999, .5);
             margin-right: 2rem;

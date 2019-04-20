@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="backdrop"></div>
+    <div class="dropdown">
+        <ul>
+            <li class="dropdown-close">&times;</li>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="nyheter.html">Nyheter</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="#" class="active">Kontakt</a></li>
+        </ul>
+    </div>
     <header class="header">
         <nav class="navbar">
             <h1 class="navbar__title">
@@ -30,6 +40,7 @@
                 <li class="navbar__menu-item"><a href="omoss.html">Om oss</a></li>
                 <li class="navbar__menu-item active"><a href="#">Kontakt</a></li>
             </ul>
+            <i class="fas fa-bars hamburger"></i>
         </nav>
     </header>
 
@@ -88,5 +99,6 @@
         </div>
         <p class="copy">Copyright &copy; 2019 av <span>Yamo Gebrewold</span></p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
