@@ -11,7 +11,7 @@
     &__box {
         width: 30%;
         border: .2px solid #777;
-        box-shadow: 1px 1.5px 2px rgba(0, 0, 0, .5);
+        box-shadow: 1px 1.5px 2px rgba(#DDD, .5);
         text-align: center;
 
         @include mediaquery(770px) {

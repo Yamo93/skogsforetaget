@@ -15,6 +15,23 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+            .mapouter{
+                position:relative;
+                text-align:center;
+                height:400px;
+                width:100%;
+                margin:0 auto
+            }
+            
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                height:400px;
+                width:100%;
+                margin:0 auto;
+            }
+            </style>
 </head>
 <body>
     <div class="backdrop"></div>
@@ -31,7 +48,7 @@
         <nav class="navbar">
             <h1 class="navbar__title">
                 <a href="#" class="logolink">Skogsföretaget AB
-                <span><img src="img/icon/tree_final.svg" class="navbar__title-icon"></span>
+                <span><img src="img/icon/tree_final.svg" class="navbar__title-icon" alt="Skogsföretagets symbol i form av ett träd"></span>
                 </a>
             </h1>
             <ul class="navbar__menu">
@@ -61,23 +78,6 @@
         
         <!-- Google Maps API section -->
         <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=malm%C3%B6&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-        <style>
-        .mapouter{
-            position:relative;
-            text-align:center;
-            height:400px;
-            width:100%;
-            margin:0 auto
-        }
-        
-        .gmap_canvas {
-            overflow:hidden;
-            background:none!important;
-            height:400px;
-            width:100%;
-            margin:0 auto;
-        }
-        </style>
         </div>
     </section>
 

@@ -172,7 +172,7 @@ a:hover, a:active {
   .features__box {
     width: 30%;
     border: .2px solid #777;
-    box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1.5px 2px rgba(221, 221, 221, 0.5);
     text-align: center; }
     @media screen and (max-width: 770px) {
       .features__box {
@@ -286,6 +286,9 @@ a:hover, a:active {
   @media screen and (max-width: 450px) {
     .newswrapper {
       padding: 3rem 1rem; } }
+
+.glide__arrow--left, .glide__arrow--right {
+  font-family: "PT Sans", sans-serif; }
 
 .mainnews {
   width: 70%; }
@@ -701,6 +704,9 @@ a:hover, a:active {
 
 .post {
   padding: 5rem; }
+  @media screen and (max-width: 500px) {
+    .post {
+      padding: 5rem 1.5rem; } }
   .post__img {
     width: 60%;
     margin: 0 auto;
@@ -709,11 +715,23 @@ a:hover, a:active {
     background-image: url(../img/frontnews.jpg);
     background-position: center;
     background-size: cover; }
+    @media screen and (max-width: 650px) {
+      .post__img {
+        width: 100%; } }
   .post__date {
     width: 40%;
     margin: 0 auto;
     font-size: 1.6rem;
     margin-bottom: 4rem; }
+    @media screen and (max-width: 650px) {
+      .post__date {
+        width: 80%; } }
+    @media screen and (max-width: 500px) {
+      .post__date {
+        width: 95%; } }
+    @media screen and (max-width: 400px) {
+      .post__date {
+        width: 100%; } }
     .post__date span {
       color: #285943;
       font-weight: bold; }
@@ -723,8 +741,26 @@ a:hover, a:active {
     font-size: 3rem;
     color: #285943;
     margin-bottom: 2rem; }
+    @media screen and (max-width: 650px) {
+      .post__title {
+        width: 80%; } }
+    @media screen and (max-width: 500px) {
+      .post__title {
+        width: 95%; } }
+    @media screen and (max-width: 400px) {
+      .post__title {
+        width: 100%; } }
   .post__para {
     width: 40%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
     line-height: 1.6em; }
+    @media screen and (max-width: 650px) {
+      .post__para {
+        width: 80%; } }
+    @media screen and (max-width: 500px) {
+      .post__para {
+        width: 95%; } }
+    @media screen and (max-width: 400px) {
+      .post__para {
+        width: 100%; } }
