@@ -20,12 +20,12 @@ function hideDropdown() {
     DOMelements.backdrop.style.display = 'none';
 }
 
-if(document.querySelector('.frontmainnews')) {
-        if (window.navigator.userAgent.indexOf("Edge") > -1 || window.navigator.userAgent.indexOf("MSIE") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1) {
-            let elementsArray = document.querySelectorAll('.frontmainnews');
+// if(document.querySelector('.frontmainnews')) {
+//         if (window.navigator.userAgent.indexOf("Edge") > -1 || window.navigator.userAgent.indexOf("MSIE") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1) {
+//             let elementsArray = document.querySelectorAll('.frontmainnews');
 
-            for (let i = 0; i < elementsArray.length; i++) {
-                elementsArray[i].style.backgroundImage = 'url("../img/frontnews.jpg")';
-            }
-        }       
-}
+//             for (let i = 0; i < elementsArray.length; i++) {
+//                 elementsArray[i].style.backgroundImage = 'url("../img/frontnews.jpg")';
+//             }
+//         }       
+// }

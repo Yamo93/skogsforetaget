@@ -9,6 +9,9 @@ html, body {
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 770px) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   position: relative;
@@ -160,6 +163,11 @@ a:hover, a:active {
       .hero__right {
         width: 100%;
         background-position: center; } }
+    @media screen and (max-width: 500px) {
+      .hero__right {
+        background: url(../img/hero.png);
+        background-size: cover;
+        background-position: bottom; } }
 
 .features {
   padding: 8rem 5%;
@@ -289,6 +297,9 @@ a:hover, a:active {
 
 .glide__arrow--left, .glide__arrow--right {
   font-family: "PT Sans", sans-serif; }
+  @media screen and (max-width: 700px) {
+    .glide__arrow--left, .glide__arrow--right {
+      top: 40%; } }
 
 .mainnews {
   width: 70%; }
@@ -302,7 +313,9 @@ a:hover, a:active {
   .mainnews .frontmainnews {
     width: 100%;
     min-height: 50vh;
-    background-image: linear-gradient(to right, #85858583, #80808081), url(../img/frontnews.jpg);
+    background-image: url(../img/frontnews.jpg);
+    background-position: center;
+    background-size: cover;
     padding: 4rem;
     margin-bottom: 4rem; }
     .mainnews .frontmainnews .info {
@@ -384,6 +397,9 @@ a:hover, a:active {
   @media screen and (max-width: 770px) {
     .newsfeed {
       width: 95%; } }
+  @media screen and (max-width: 500px) {
+    .newsfeed {
+      width: 100%; } }
   .newsfeed__title {
     color: #F68657; }
   .newsfeed__feed {
@@ -434,6 +450,9 @@ a:hover, a:active {
     width: 60rem;
     height: 60rem;
     border-radius: 50%; }
+    @media screen and (max-width: 500px) {
+      .aboutmain .circleone, .aboutmain .circletwo {
+        display: none; } }
   .aboutmain .circleone {
     top: 5vh;
     left: -10%; }
