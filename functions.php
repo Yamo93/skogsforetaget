@@ -4,7 +4,8 @@
 
     function register_my_menus() {
         register_nav_menus(array(
-            'main-menu' => 'Top menu'
+            'main-menu' => 'Toppmeny',
+            'footer_menu' => 'Fotmeny'
         ));
     }
 
@@ -19,5 +20,10 @@
     'after_title' => '</h2>',
     )
     );
+
+    function custom_excerpt_length( $length ) {
+        return 15;
+    }
+    add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 ?>

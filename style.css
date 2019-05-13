@@ -3,13 +3,16 @@ Theme Name: Skogsföretagets tema
 Author: Yamo Gebrewold
 */
 
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html, body {
+html, 
+body {
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -30,7 +33,15 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, li, p, a {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+li, 
+p, 
+a {
   font-family: "PT Sans", sans-serif;
 }
 
@@ -46,7 +57,9 @@ h3 {
   font-size: 2.2rem;
 }
 
-p, li, a {
+p, 
+li, 
+a {
   font-size: 1.8rem;
 }
 
@@ -54,14 +67,16 @@ ul {
   list-style: none;
 }
 
-a:link, a:visited {
+a:link, 
+a:visited {
   text-decoration: none;
   color: #285943;
   font-weight: 600;
   font-size: inherit;
 }
 
-a:hover, a:active {
+a:hover, 
+a:active {
   color: #183629;
 }
 
@@ -92,40 +107,48 @@ a:hover, a:active {
   margin-left: 1rem;
 }
 
-.navbar__menu, .menu {
+.navbar__menu, 
+.menu {
   display: flex;
 }
 
 @media screen and (max-width: 770px) {
-  .navbar__menu, .menu {
+  .navbar__menu, 
+  .menu {
     display: none;
   }
 }
 
-.navbar__menu-item:not(:last-child), .menu-item:not(:last-child) {
+.navbar__menu-item:not(:last-child), 
+.menu-item:not(:last-child) {
   margin-right: 4rem;
 }
 
-.navbar__menu-item, .menu-item {
+.navbar__menu-item, 
+.menu-item {
   text-transform: uppercase;
   color: #285943;
   border-bottom: 2px solid transparent;
   transition: all .3s;
 }
 
-.navbar__menu-item:hover, .menu-item:hover {
+.navbar__menu-item:hover, 
+.menu-item:hover {
   border-bottom: 2px solid #F68657;
 }
 
-.navbar__menu-item a, .menu-item a {
+.navbar__menu-item a, 
+.menu-item a {
   font-weight: normal;
 }
 
-.navbar__menu .active, .current-menu-item {
+.navbar__menu .active, 
+.current-menu-item {
   border-bottom: 2px solid #F68657;
 }
 
-.navbar .hamburger {
+.navbar 
+.hamburger {
   color: #333;
   display: none;
   font-size: 4rem;
@@ -341,14 +364,16 @@ a:hover, a:active {
   color: #FEFEFE;
 }
 
-.footer__menu {
+.footer__menu, 
+#menu-fotmeny {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 500px) {
-  .footer__menu {
+  .footer__menu, 
+  #menu-fotmeny {
     flex-direction: column;
     width: 30%;
     margin: 0 auto;
@@ -356,23 +381,37 @@ a:hover, a:active {
   }
 }
 
-.footer__menu a {
-  color: inherit;
+#menu-fotmeny .current-menu-item {
+  border-bottom: none;
+}
+
+#menu-fotmeny .menu-item:hover {
+  border-bottom: none;
+}
+
+.footer__menu a, 
+#menu-fotmeny a {
+  color: #FEFEFE;
+  text-transform: initial;
   font-weight: normal;
   transition: all .3s;
 }
 
 @media screen and (max-width: 500px) {
-  .footer__menu a {
+  .footer__menu a, 
+  #menu-fotmeny a {
     font-size: 1.6rem;
   }
 }
 
-.footer__menu a:hover {
+.footer__menu a:hover, 
+#menu-fotmeny a:hover {
   color: #F68657;
+  border-bottom: none;
 }
 
-.footer__menu-item:not(:last-child) {
+.footer__menu-item:not(:last-child), 
+#menu-fotmeny .menu-item:not(:last-child) {
   margin-right: 2rem;
 }
 
@@ -462,7 +501,8 @@ a:hover, a:active {
   }
 }
 
-.glide__arrow--left, .glide__arrow--right {
+.glide__arrow--left, 
+.glide__arrow--right {
   font-family: "PT Sans", sans-serif;
 }
 
@@ -692,7 +732,8 @@ a:hover, a:active {
   }
 }
 
-.newsfeed__post-img, .newsfeed .attachment-thumbnail {
+.newsfeed__post-img, 
+.newsfeed .attachment-thumbnail {
   width: 8rem;
   height: 8rem;
 }
@@ -750,7 +791,8 @@ a:hover, a:active {
   }
 }
 
-.aboutmain .circleone, .aboutmain .circletwo {
+.aboutmain .circleone, 
+.aboutmain .circletwo {
   z-index: -5;
   position: absolute;
   border: 0.5px solid rgba(136, 136, 136, 0.3);
@@ -1104,7 +1146,12 @@ a:hover, a:active {
   align-items: center;
 }
 
-.contact__form-name, .contact__form-email, .contact__form-message, .wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+.contact__form-name, 
+.contact__form-email, 
+.contact__form-message, 
+.wpcf7-text, 
+.wpcf7-email, 
+.wpcf7-textarea {
   border: 0.5px solid rgba(51, 51, 51, 0.5);
   margin-bottom: 2rem;
   padding: .7rem 1.5rem;
@@ -1115,7 +1162,9 @@ a:hover, a:active {
   outline: none;
 }
 
-.wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+.wpcf7-text, 
+.wpcf7-email, 
+.wpcf7-textarea {
   width: 100%;
 }
 
@@ -1125,29 +1174,50 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 950px) {
-  .contact__form-name, .contact__form-email, .contact__form-message, .wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+  .contact__form-name, 
+  .contact__form-email, 
+  .contact__form-message, 
+  .wpcf7-text, 
+  .wpcf7-email, 
+  .wpcf7-textarea {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .contact__form-name, .contact__form-email, .contact__form-message, .wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+  .contact__form-name, 
+  .contact__form-email, 
+  .contact__form-message, 
+  .wpcf7-text, 
+  .wpcf7-email, 
+  .wpcf7-textarea {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .contact__form-name, .contact__form-email, .contact__form-message, .wpcf7-text, .wpcf7-email, .wpcf7-textarea {
+  .contact__form-name, 
+  .contact__form-email, 
+  .contact__form-message, 
+  .wpcf7-text, 
+  .wpcf7-email, 
+  .wpcf7-textarea {
     width: 95%;
   }
 }
 
-.contact__form-name:focus, .contact__form-email:focus, .contact__form-message:focus, .wpcf7-text:focus, .wpcf7-email:focus, .wpcf7-textarea:focus {
+.contact__form-name:focus, 
+.contact__form-email:focus, 
+.contact__form-message:focus, 
+.wpcf7-text:focus, 
+.wpcf7-email:focus, 
+.wpcf7-textarea:focus {
   outline: none;
   border-bottom: 3px solid #8CD790;
 }
 
-.contact__form-button, .wpcf7-submit {
+.contact__form-button, 
+.wpcf7-submit {
   cursor: pointer;
   padding: 1rem 4rem;
   background-color: #8CD790;
@@ -1160,7 +1230,8 @@ a:hover, a:active {
   margin-bottom: 6rem;
 }
 
-.contact__form-button:hover, .wpcf7-submit:hover {
+.contact__form-button:hover, 
+.wpcf7-submit:hover {
   transform: scale(1.2);
   background-color: #66ca6b;
 }
@@ -1239,7 +1310,8 @@ a:hover, a:active {
   }
 }
 
-.post__date, .post-categories li {
+.post__date, 
+.post-categories li {
   width: 40%;
   margin: 0 auto;
   font-size: 1.6rem;
@@ -1247,19 +1319,22 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 650px) {
-  .post__date, .post-categories li {
+  .post__date, 
+  .post-categories li {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .post__date, .post-categories li {
+  .post__date, 
+  .post-categories li {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .post__date, .post-categories li {
+  .post__date, 
+  .post-categories li {
     width: 100%;
   }
 }
@@ -1295,7 +1370,8 @@ a:hover, a:active {
   }
 }
 
-.post__para, .post p {
+.post__para, 
+.post p {
   width: 40%;
   margin: 0 auto;
   margin-bottom: 1.5rem;

@@ -3,7 +3,7 @@
 ?>
         <div class="newswrapper">
     <section class="mainnews">
-        <?php echo do_shortcode('[adl-post-slider id=58]'); ?>
+        <?php echo do_shortcode('[adl-post-slider id=64]'); ?>
         <div class="wrapper">
             <?php 
             global $wp_query;
@@ -37,7 +37,7 @@
                 ?>
                 <div class="mainnews__box-info">
                     <h3 class="title"><?php the_title(); ?></h3>
-                    <p class="excerpt"><?php the_excerpt(); ?></p>
+                    <?php the_excerpt(); ?>
                     <p class="author">Av <strong><?php the_author(); ?></strong></p>
                     <a href="<?php the_permalink(); ?> " class="readmore">Läs mer</a>
                 </div>

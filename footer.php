@@ -1,4 +1,5 @@
 <footer class="footer">
+    <?php wp_nav_menu(array( 'theme_location' => 'footer_menu' )); ?>
         <ul class="footer__menu">
             <li class="footer__menu-item"><a href="#">Vår blogg</a></li>
             <li class="footer__menu-item"><a href="#">Användarpolicy</a></li>
