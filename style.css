@@ -1107,20 +1107,25 @@ a:active {
   height: 120%;
 }
 
+.page, .error {
+  padding: 5rem;
+  height: auto;
+}
+
 @media screen and (max-width: 500px) {
-  .contact {
+  .contact, .page, .error {
     padding: 5rem 1.5rem;
   }
 }
 
-.contact__title {
+.contact__title, .page__title, .error__title {
   color: #285943;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.contact__text {
+.contact__text, .page__text, .page p, .error p {
   color: #285943;
   width: 50%;
   margin: 0 auto;
@@ -1128,15 +1133,49 @@ a:active {
 }
 
 @media screen and (max-width: 650px) {
-  .contact__text {
+  .contact__text, .page__text, .page p, .error p {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .contact__text {
+  .contact__text, .page__text, .page p, .error p {
     width: 95%;
   }
+}
+
+.error p a {
+  color: #F68657;
+}
+
+.error #searchform {
+  display: flex;
+  justify-content: center;
+}
+
+.error .searchinput {
+  display: block;
+  width: 40%;
+  padding: 4px;
+  font: inherit;
+  font-size: 1.6rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+.error .searchbutton {
+  display: block;
+  font: inherit;
+  font-size: 1.6rem;
+  font-family: "PT Sans", sans-serif;
+  padding: 4px;
+  background-color: #53c359;
+  color: #FEFEFE;
+  border: 2px solid #53c359;
+  transition: all .3s;
+}
+
+.error .searcbutton:active {
+  transform: translateY(2px);
 }
 
 .contact__form, .wpcf7-form {
@@ -1371,27 +1410,35 @@ a:active {
 }
 
 .post__para, 
-.post p {
+.post p, 
+.post h3 {
   width: 40%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
   line-height: 1.6em;
 }
 
+
 @media screen and (max-width: 650px) {
-  .post__para {
+  .post__para, 
+  .post p, 
+  .post h3 {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .post__para {
+  .post__para, 
+  .post p, 
+  .post h3 {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .post__para {
+  .post__para, 
+  .post p, 
+  .post h3 {
     width: 100%;
   }
 }

@@ -1,11 +1,5 @@
 <footer class="footer">
     <?php wp_nav_menu(array( 'theme_location' => 'footer_menu' )); ?>
-        <ul class="footer__menu">
-            <li class="footer__menu-item"><a href="#">Vår blogg</a></li>
-            <li class="footer__menu-item"><a href="#">Användarpolicy</a></li>
-            <li class="footer__menu-item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="footer__menu-item"><a href="omoss.html">Om företaget</a></li>
-        </ul>
         <p class="socialfollow">Följ oss på</p>
         <div class="socialmedia">
             <i class="fab fa-instagram icon"></i>

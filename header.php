@@ -23,7 +23,7 @@
     <header class="header">
         <nav class="navbar">
             <h1 class="navbar__title">
-                <a href="#" class="logolink">Skogsföretaget AB
+                <a href="<?php echo home_url(); ?>" class="logolink">Skogsföretaget AB
                 <span><img src="<?php bloginfo('template_directory'); ?>/img/icon/tree_final.svg" class="navbar__title-icon" alt="Skogsföretagets symbol i form av ett träd"></span>
                 </a>
             </h1>
